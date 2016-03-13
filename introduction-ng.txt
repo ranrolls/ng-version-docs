@@ -1,0 +1,98 @@
+13 march 2016, https://en.wikipedia.org/wiki/AngularJS
+
+Angular started in 2009 and current size of 144kb production 
+
+AngularJS was originally developed in 2009 by Misko Hevery[10] at Brat Tech LLC[11] as the software behind an online JSON storage service, that would have been priced by the megabyte, for easy-to-make applications for the enterprise. This venture was located at the web domain "GetAngular.com", and had a few subscribers, before the two decided to abandon the business idea and release Angular as an open-source library.
+
+AngularJS is an open-source web application framework mainly maintained by Google and by a community of individuals to address many of the challenges encountered in developing single-page applications. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) architectures, along with components commonly used in rich Internet applications.
+
+The AngularJS framework works by first reading the HTML page, which has embedded into it additional custom tag attributes. Angular interprets those attributes as directives to bind input or output parts of the page to a model that is represented by standard JavaScript variables. The values of those JavaScript variables can be manually set within the code, or retrieved from static or dynamic JSON resources.
+
+According to JavaScript analytics service Libscore, AngularJS is used on approximately 8,400 websites out of 1 million tested in July 2015.
+
+AngularJS is the frontend part of the MEAN stack, consisting of MongoDB database, Express.js web application server framework, Angular.js itself, and Node.js runtime environment.
+
+Philosophy
+AngularJS's design goals include:
+
+    to decouple DOM manipulation from application logic. The difficulty of this is dramatically affected by the way the code is structured.
+    to decouple the client side of an application from the server side. This allows development work to progress in parallel, and allows for reuse of both sides.
+    to provide structure for the journey of building an application: from designing the UI, through writing the business logic, to testing.
+
+
+Scope
+Angular uses the term “scope” in a manner akin to the fundamentals of computer science.
+
+Scope in computer science describes when in the program a particular binding is valid. The ECMA-262 specification defines scope as: a lexical environment in which a Function object is executed in client-side web scripts;[3] akin to how scope is defined in lambda calculus.[4]
+
+In Angular, “scope” is a certain kind of object[5] that itself can be in scope or out of scope in any given part of the program, following the usual rules of variable scope in JavaScript like any other object.[6] When the term “scope” is used below, it refers to the Angular scope object and not the scope of a name binding.
+
+
+Bootstrap
+
+The tasks performed by the AngularJS bootstrapper occur in three phases[7] after the DOM has been loaded:
+
+    Creation of a new Injector
+    Compilation of the directives that decorate the DOM
+    Linking of all directives to scope
+
+AngularJS directives allow the developer to specify custom and reusable HTML-like elements and attributes that define data bindings and the behavior of presentation components. Some of the most commonly used directives are:
+
+ng-app
+    Declares the root element of an AngularJS application, under which directives can be used to declare bindings and define behavior.
+ng-bind
+    Sets the text of a DOM element to the value of an expression. For example, <span ng-bind="name"></span> displays the value of ‘name’ inside the span element. Any change to the variable ‘name’ in the application's scope reflect instantly in the DOM.
+ng-model
+    Similar to ng-bind, but establishes a two-way data binding between the view and the scope.
+ng-model-options
+    Provides tuning for how model updates are done.
+ng-class
+    Lets class attributes be dynamically loaded.
+ng-controller
+    Specifies a JavaScript controller class that evaluates HTML expressions.
+ng-repeat
+    Instantiate an element once per item from a collection.
+ng-show & ng-hide
+    Conditionally show or hide an element, depending on the value of a boolean expression. Show and hide is achieved by setting the CSS display style.
+ng-switch
+    Conditionally instantiate one template from a set of choices, depending on the value of a selection expression.
+ng-view
+    The base directive responsible for handling routes that resolve JSON before rendering templates driven by specified controllers.
+ng-if
+    Basic if statement directive that allow to show the following element if the conditions are true. When the condition is false, the element is removed from the DOM. When true, a clone of the compiled element is re-inserted
+ng-aria
+    A module for accessibility support of common ARIA attributes.
+ng-animate
+    A module provides support for JavaScript, CSS3 transition and CSS3 keyframe animation hooks within existing core and custom directives.
+
+Since ng-* attributes are not valid in HTML specifications, data-ng-* can also be used as a prefix. For example, both ng-app and data-ng-app are valid in AngularJS.
+
+
+Two-way data binding
+
+AngularJS' two-way data binding is its most notable feature, largely relieving the server backend of templating responsibilities. Instead, templates are rendered in plain HTML according to data contained in a scope defined in the model. The $scope service in Angular detects changes to the model section and modifies HTML expressions in the view via a controller. Likewise, any alterations to the view are reflected in the model. This circumvents the need to actively manipulate the DOM and encourages bootstrapping and rapid prototyping of web applications.[8] AngularJS detects changes in models by comparing the current values with values stored earlier in a process of dirty-checking, unlike Ember.js and Backbone.js that trigger listeners when the model values are changed.[9]
+Development history
+
+AngularJS was originally developed in 2009 by Misko Hevery[10] at Brat Tech LLC[11] as the software behind an online JSON storage service, that would have been priced by the megabyte, for easy-to-make applications for the enterprise. This venture was located at the web domain "GetAngular.com",[11] and had a few subscribers, before the two decided to abandon the business idea and release Angular as an open-source library.
+Releases
+
+The current stable release of AngularJS is 1.5.0.[12]
+
+AngularJS 2.0 was announced at the ng-europe conference 22-23. September 2014.[13] The drastic changes in the 2.0 version created considerable controversy among developers.[14] On April 30, 2015, the AngularJS developers announced that AngularJS 2 moved from Alpha to Developer Preview.[15] AngularJS 2 can be downloaded from official website. Angular 2 moved to Beta in December 2015,[16] and there are no official release dates for first production version, only few suggestions that be coming out in Mid 2016.[17]
+
+The code names are super-power related, composed of two hyphen-joined words, should sound “fun / crazy / cool”, and are publicly submitted and voted by users.
+
+
+Legacy browser support
+
+Versions 1.2 and later of AngularJS do not support Internet Explorer versions 6 or 7.[19] Versions 1.3 and later of AngularJS dropped support for Internet Explorer 8.
+
+
+Chrome plugin
+
+In July 2012, the Angular team built a plugin for the Google Chrome browser called Batarang,[21] that improves the debugging experience for web applications built with Angular. The extension aims to allow for easy detection of performance bottlenecks and offers a GUI for debugging applications.[22] For a time during late 2014 and early 2015, the extension was not compatible with recent releases (after v1.2.x) of Angular.[23] It is currently, as of early 2016, still under development and works with all versions of Angular.
+Performance
+
+AngularJS sets out the paradigm of a digest cycle. This cycle can be considered a loop, during which AngularJS checks if there is any change to all the variables watched by all the $scopes. So, if $scope.myVar is defined in a controller and this variable was marked for watching, AngularJS will monitor the changes on myVar in each loop iteration.
+
+This approach potentially leads to slow rendering when AngularJS checks on too many variables in the $scope every cycle. Hevery suggests keeping fewer than 2000 watchers on any page.

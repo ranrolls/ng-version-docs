@@ -1,0 +1,1 @@
+an ngClick handler with thumbnail images. When a user clicks on one of the thumbnail images, the handler will use the setImage event handler function to change the value of the mainImageUrl property to the URL of the thumbnail image.

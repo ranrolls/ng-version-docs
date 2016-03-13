@@ -1,0 +1,29 @@
+1. Speed & Performance
+Angular 2 is dramatically faster than Angular 1 with support for fast initial loads through server-side pre-rendering, offline compile for fast startup, and ultrafast change detection and view caching for smooth virtual scrolling and snappy view transitions.
+
+2. Simple & Expressive
+Make your intention clear using natural, easy-to-write syntax. Reduce complexity for your team: new, structure-rich templates are readable and easy to understand at a glance.
+
+3. Cross Platform
+Learning Angular 2 gives you the tools you need to build apps for desktop, mobile web, Android, and iOS. Angular Universal provides for server-side rendering for fast initial views on mobile web. Ionic and NativeScript let you build hybrid and native UI mobile apps. Web worker support keeps your app UI fully responsive no matter how heavy the load.
+
+4. Seamless Upgrade from Angular 1
+Upgrade your Angular 1 application at your own pace by mixing in Angular 2 components, directives, pipes, services and more by using the ngUpgrade APIs.
+
+5. Flexible Development
+The choice of language is up to you. In addition to full support for ES5, TypeScript, and Dart, Angular 2 works equally well with ES2015 and other languages that compile to JavaScript.
+
+6. Comprehensive Routing
+Design sophisticated views: map URL paths to application components, and use advanced features like nested and sibling routes. Angular 2 supports card stack navigation, animated transitions, and lazy loading for mobile users. If you already use routing from a prior version of Angular, you can easily migrate to Angular 2 routing.
+
+7. Dependency Injection
+Angular 2 ships with powerful, yet simple-to-use dependency injection, allowing you to maintain modular applications without writing tedious glue code. Dependency injection helps you write tests by making it easy to inject test doubles.
+
+8. Legacy Browser Support
+In addition to fully supporting latest versions of Chrome, Edge, Firefox, IE, and Safari, Angular 2 is also tested for older browsers including IE9+ and Android 4.1+.
+
+9. Animations
+[Under development] Tap directly into low-level animation support on mobile and desktop environments with easy-to-use Angular events. You can use CSS, JavaScript, and the Web Animations API to intelligently handle changes to animations in response to user events. Plan complex animation flows by sequencing the behavior of an entire website on a timeline.
+
+10. Internationalization (I18N) & Accessibility
+[Under development] Reach all your users. Use the familiar ICU message format in Angular interpolation syntax ({{ }}), including pluralization and gender rules. Automate message extraction, pseudo-localization, and translation updates. Generate static applications for each locale. Easily promote accessibility via screen readers and assistive devices by automatically generating appropriate ARIA attributes. 
